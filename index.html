@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="style/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
     <link rel="stylesheet" href="style/style.css">
     <title>GOCAST</title>
 </head>
@@ -32,10 +32,11 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <script src="js/menu_burg.js"></script>
             <div id="butones_head">
                 <a href="#" class="primary_button">Subscribe</a>
-                <a href="#" class="secondary_button" id="donate_button"><img src="img/paypal.png" alt="paypal" id="paypal"><span>Donate</span></a>
+                <a href="#" class="secondary_button" id="donate_button"><svg xmlns="http://www.w3.org/2000/svg" id="paypal" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                    <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
+                  </svg><span>Donate</span></a>
             </div>
         </div>
         <div id="intro">
@@ -60,48 +61,58 @@
                 <h2>Latest Podcast Episodes</h2>
                 <a href="#" class="primary_button">View All</a>
             </div>
-            <article>
-                <img src="img/2123.png" alt="perro">
-                <div>
-                    <h3>Visiting my best friend's city for first time</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod 
-                        tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
-                    <img src="img/Grupo 14.png" alt="play_control">
-                </div>
-                <div class="Hashtags">
-                    <span># Season 1</span>
-                    <span># Posted on Sep 3, 2020</span>
-                    <span>#  audio / goodbyes / life</span>
-                </div>
-            </article>
-            <article>
-                <img src="img/hello-revival-YH_Ne4R9ZAc-unsplash.png" alt="img_article">
-                <div>
-                    <h3>Visiting my best friend's city for first time</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod 
-                        tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
-                    <img src="img/Grupo 14.png" alt="play_control">
-                </div>
-                <div class="Hashtags">
-                    <span># Season 1</span>
-                    <span># Posted on July 29, 2020</span>
-                    <span>#  goodbyes / life</span>
-                </div>
-            </article>
-            <article>
-                <img src="img/alexander-tsang-_frvdyMH6S0-unsplash.png" alt="img_article">
-                <div>
-                    <h3>Visiting my best friend's city for first time</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod 
-                        tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
-                    <img src="img/Grupo 14.png" alt="play_control">
-                </div>
-                <div class="Hashtags">
-                    <span># Season 1</span>
-                    <span># Posted on Sep 11, 2020</span>
-                    <span>#  audio / goodbyes</span>
-                </div>
-            </article>
+            <div id="body_section1">
+                <article>
+                    <div class="img_article">
+                        <img src="img/2123.png" alt="perro">
+                        <img src="img/Trazado 13126.png" id="etiqueta_new" alt="new">
+                        <span>New</span>
+                    </div>
+                    <div class="body_article">
+                        <h3>Visiting my best friend's city for first time</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod 
+                            tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
+                        <img src="img/Grupo 14.png" alt="play_control">
+                    </div>
+                    <div class="Hashtags">
+                        <span># Season 1</span>
+                        <span># Posted on Sep 3, 2020</span>
+                        <span>#  audio / goodbyes / life</span>
+                    </div>
+                </article>
+                <article>
+                    <div class="img_article">
+                        <img src="img/hello-revival-YH_Ne4R9ZAc-unsplash.png" alt="img_article">
+                    </div>
+                    <div class="body_article">
+                        <h3>Visiting my best friend's city for first time</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod 
+                            tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
+                        <img src="img/Grupo 14.png" alt="play_control">
+                    </div>
+                    <div class="Hashtags">
+                        <span># Season 1</span>
+                        <span># Posted on July 29, 2020</span>
+                        <span>#  goodbyes / life</span>
+                    </div>
+                </article>
+                <article>
+                    <div class="img_article">
+                        <img src="img/alexander-tsang-_frvdyMH6S0-unsplash.png" alt="img_article">
+                    </div>
+                    <div class="body_article">
+                        <h3>Visiting my best friend's city for first time</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod 
+                            tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
+                        <img src="img/Grupo 14.png" alt="play_control">
+                    </div>
+                    <div class="Hashtags">
+                        <span># Season 1</span>
+                        <span># Posted on Sep 11, 2020</span>
+                        <span>#  audio / goodbyes</span>
+                    </div>
+                </article>
+            </div>
             <div id="bottom_section1">
                 <a href="#" class="secondary_button">Show More Episode</a>
             </div>
@@ -112,7 +123,7 @@
         <div id="posts" class="center">
             <article class="shadow">
                 <div class="head_post_art">
-                    <span class="art_autor">By Mehedi Hasan</span>&nbsp;&nbsp;<span class="art_date">Sep 11, 2020</span>
+                    <span class="art_autor">By Mehedi Hasan</span><span class="art_date">Sep 11, 2020</span>
                     <span class="art_date art_desc">Cantonese Radio</span>
                 </div>
                 <div class="body_post_art">
@@ -124,7 +135,7 @@
             </article>
             <article class="shadow">
                 <div class="head_post_art">
-                    <span class="art_autor">By Mehedi Hasan</span>&nbsp;&nbsp;<span class="art_date">Sep 11, 2020</span>
+                    <span class="art_autor">By Mehedi Hasan</span><span class="art_date">Sep 11, 2020</span>
                     <span class="art_date art_desc">Cantonese Radio</span>
                 </div>
                 <div class="body_post_art">
@@ -136,7 +147,7 @@
             </article>
             <article class="shadow">
                 <div class="head_post_art">
-                    <span class="art_autor">By Mehedi Hasan</span>&nbsp;&nbsp;<span class="art_date">Sep 11, 2020</span>
+                    <span class="art_autor">By Mehedi Hasan</span><span class="art_date">Sep 11, 2020</span>
                     <span class="art_date art_desc">Cantonese Radio</span>
                 </div>
                 <div class="body_post_art">
@@ -148,7 +159,7 @@
             </article>
             <article class="shadow">
                 <div class="head_post_art">
-                    <span class="art_autor">By Mehedi Hasan</span>&nbsp;&nbsp;<span class="art_date">Sep 11, 2020</span>
+                    <span class="art_autor">By Mehedi Hasan</span><span class="art_date">Sep 11, 2020</span>
                     <span class="art_date art_desc">Cantonese Radio</span>
                 </div>
                 <div class="body_post_art">
@@ -159,8 +170,6 @@
                 </div>
             </article>
         </div>
-        <script src="slick/slick.min.js"></script>
-        <script src="js/slick_mod.js"></script>
     </section>
     <section id="featured" class="container">
         <div>
@@ -193,43 +202,45 @@
         </div>
         <div id="footer_part2">
             <div id="part1_logo">
-                <img src="img/Grupo 121.png" alt="logo" id="logo">
+                <a href="#"><img src="img/Grupo 121.png" alt="logo" id="logo"></a>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing 
                     elitr, sed diam nonumy eirmod tempor invidunt.</p>
                 <span>Socials</span>
                 <div id="redes_sociales">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="img/linkedin.png" alt="linkedln"></a>
+                    <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="img/skype.png" alt="skype"></a>
                 </div>
             </div>
             <div class="part2_3">
                 <h3>Pages</h3>
                 <ul>
-                    <ol><a href="#">About</a></ol>
-                    <ol><a href="#">Episode</a></ol>
-                    <ol><a href="#">Blog</a></ol>
-                    <ol><a href="#">Contact</a></ol>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episode</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <div class="part2_3">
                 <h3>Recent Episodes</h3>
                 <ul>
-                    <ol><a href="#">Episodes 1</a></ol>
-                    <ol><a href="#">Episodes 2</a></ol>
-                    <ol><a href="#">Episodes 3</a></ol>
-                    <ol><a href="#">Episodes 4</a></ol>
+                    <li><a href="#">Episodes 1</a></li>
+                    <li><a href="#">Episodes 2</a></li>
+                    <li><a href="#">Episodes 3</a></li>
+                    <li><a href="#">Episodes 4</a></li>
                 </ul>
             </div>
             <div id="part4_listen">
                 <h3>Listen My Podcasts Also In</h3>
-                <img src="img/Grupo 135.png" alt="google podcasts">
-                <img src="img/Grupo 134.png" alt="appel podcasts">
-                <img src="img/Grupo 133.png" alt="spotify">
+                <a href=""><img src="img/Grupo 135.png" alt="google podcasts"></a>
+                <a href=""><img src="img/Grupo 134.png" alt="appel podcasts"></a>
+                <a href=""><img src="img/Grupo 133.png" alt="spotify"></a>
             </div>
         </div>
         <span id="copyright">@2020 Themefisher All Rights Reserved | Design By : Themefisher.designer</span>
     </footer>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

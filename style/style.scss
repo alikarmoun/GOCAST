@@ -19,6 +19,7 @@ $black3 : #777777;
 
 .primary_button
 {
+    border: 1px solid $primary_color;
     border-radius: 3px;
     background-color: $primary_color;
     color: #FFFFFF;
@@ -37,6 +38,16 @@ $black3 : #777777;
    padding: 13px 25px;
    text-decoration: none;
    text-align: center;
+}
+
+.primary_button:hover {
+    color: $primary_color;
+    background-color: unset;
+}
+
+.secondary_button:hover {
+    background-color: $primary_color;
+    color: #FFFFFF;
 }
 
 .shadow {
@@ -115,6 +126,7 @@ header:before {
     padding-top: 43px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     nav {
         display: flex;
         justify-content: space-between;
@@ -146,16 +158,15 @@ header:before {
     #donate_button {
         margin-left: 31.5px;
         #paypal{
-            vertical-align: middle;
+            vertical-align: bottom;
             margin-right: 5px;
         }
     }
 }
 
 #intro {
-    height: 100vh;
     margin-top: 140px;
-    
+    padding-bottom: 166px;
     .span_intro {
         font-size: 14px;
         color: $primary_color;
@@ -195,48 +206,62 @@ header:before {
         }
         a{
             width: 115px;
-            height: 42px;
         }
     }
-    article {
-        display: flex;
-        margin: auto;
-        margin-bottom: 27px;
-        img {
-            margin-right: 11px;
+    #body_section1{
+        padding-left: 30px;
+        article {
+            display: flex;
+            margin: auto;
+            margin-bottom: 27px;
+            .img_article {
+                position: relative;
+                margin-right: 11px;
+                #etiqueta_new {
+                    position: absolute;
+                    top: 8.7px;
+                    right: 24.2px;
+                }
+                span {
+                    color: white;
+                    font-size: 10px;
+                    position: absolute;
+                    top: 16px;
+                    right: 28px;
+                }
+            }
+            .body_article {
+                width: 560px;
+                margin-right: 19.6px;
+                h2{
+                font-size: 24px;
+                }
+                p{
+                color: $black3;
+                font-size: 15px;
+                }
+            }
+            .Hashtags{
+                border-left: 1px solid $tertiary_color;
+                align-self: center;
+                span{
+                    font-size: 14px;
+                    color: $grayscale1;
+                    display: block;
+                    margin-left: 20.4px;
+                }
+                span:first-child{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                span:last-child{
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }
+            }
         }
-        div {
-            width: 560px;
-            margin-right: 19.6px;
-            h2{
-            font-size: 24px;
-            }
-            p{
-            color: $black3;
-            font-size: 15px;
-            }
-        }
-        
-        .Hashtags{
-            border-left: 1px solid $tertiary_color;
-            align-self: center;
-            span{
-                font-size: 14px;
-                color: $grayscale1;
-                display: block;
-                margin-left: 20.4px;
-            }
-            span:first-child{
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
-            span:last-child{
-                margin-bottom: 15px;
-                margin-top: 15px;
-            }
-        }
-        
     }
+    
     #bottom_section1{
         text-align: center;
         margin-top: 57px;
@@ -252,12 +277,15 @@ header:before {
             width: 370px;
             height: 100%;
             padding-top: 40px;
+            padding-bottom: 56px;
+            margin: 0px 10px 0px 10px;
             .head_post_art{
+                padding-left: 34.5px;
                 border-left: 2px solid $primary_color;
-                padding-left: 34px;
                 .art_autor{
                     color: $primary_color;
                     font-size: 16px;
+                    margin-right: 8px;
                 }
                 .art_date {
                     color: $grayscale2;
@@ -282,9 +310,6 @@ header:before {
                     margin: 0px 43px 30.5px 0px;
                     line-height: 23px;
                 }
-                div {
-                    margin-bottom: 56px;
-                }
             }
             
         }
@@ -293,16 +318,17 @@ header:before {
 
 #featured {
     margin-top: 187px;
-    margin-bottom: 218px;
+    margin-bottom: 200px;
     div {
         width: 906px;
         margin: auto;
         #logos {
-            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             text-align: center;
             img {
-                margin-right: 44px;
-                margin-bottom: 35px;
+                margin: 0px 22px 35px 22px;
             }
         }
     }
@@ -344,7 +370,6 @@ footer {
     }
     #footer_part2{
         border-bottom: 1px solid $tertiary_color;
-        margin-bottom: 55.5px;
         padding-bottom: 60px;
         display: flex;
         justify-content: space-between;
@@ -367,21 +392,14 @@ footer {
                     width: 45px;
                     height: 45px;
                     display: inline-block;
-                    background-position: center;
-                    background-repeat: no-repeat;
                     margin-right: 27px;
-                }
-                a:first-child {
-                    background-image: url(../img/facebook.png);
-                }
-                a:nth-child(2){
-                    background-image: url(../img/linkedin.png);
-                }
-                a:nth-child(3){
-                    background-image: url(../img/instagram.png);
-                }
-                a:nth-child(4){
-                    background-image: url(../img/skype.png);
+                    position: relative;
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
                 }
             }
         }
@@ -395,7 +413,7 @@ footer {
             ul {
                 list-style: none;
                 padding: 0px;
-                ol{
+                li{
                     padding: 0px;
                     margin-bottom: 26px;
                     a{
@@ -413,10 +431,13 @@ footer {
                 color: $black1;
                 font-weight: normal;
             }
-            img {
-                margin-bottom: 15px;
-                display: block;
+            a{
+                img {
+                    margin-bottom: 15px;
+                    display: block;
+                }
             }
+            
         }
     }
     #copyright {
@@ -424,6 +445,7 @@ footer {
         text-align: center;
         color: $grayscale3;
         font-size: 14px;
+        margin-top: 55.5px;
         margin-bottom: 65px;
     }
 }
@@ -435,24 +457,32 @@ footer {
 
     header {
         width: 100vw;
-        height: 100%;
     }
 
     #head {
+        padding: 19px 20px 14px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
         #logo {
             width: auto;
         }
-        padding: 30px 10px 0px 10px;
         #butones_head {
             display: none;
         }
+    }
+
+    .scrollbarre {
+        background-color: $secondary_color;
     }
 
     .hamburger{
         position:absolute;
         background-color:transparent;
         right:20px;
-        top:10px;
+        top:5px;
         height:30px;
         width:30px;
         padding:20px 20px;
@@ -550,7 +580,9 @@ footer {
 
     #intro {
         height: 100%;
-        margin-top: 40px;
+        margin-top: 0;
+        padding-bottom: 70px;
+        padding-top: 110px;
         h1 {
             width: auto;
             font-size: 35px;
@@ -576,23 +608,32 @@ footer {
                 font-size: 25px;
             }
         }
-        article {
-            flex-wrap: wrap;
-            img {
-                width: 100%;
-                margin: 0px;
-            }
-            div {
-                width: auto;
-                margin: 0px;
-                text-align: center;
-            }
-            .Hashtags {
-                border-left: unset;
-                border-top: 1px solid $tertiary_color;
-                margin: auto;
-                span {
-                    margin-left: unset;
+        #body_section1 {
+            padding-left: 0px;
+            article {
+                flex-wrap: wrap;
+                .img_article {
+                    width: 100%;
+                    margin: 0px;
+                    img:first-child{
+                        width: 100%;
+                    }
+                }
+                .body_article {
+                    width: 100%;
+                    margin: 0px;
+                    text-align: center;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .Hashtags {
+                    border-left: unset;
+                    border-top: 1px solid $tertiary_color;
+                    margin: auto;
+                    span {
+                        margin-left: unset;
+                    }
                 }
             }
         }
@@ -600,10 +641,47 @@ footer {
 
     #blog_posts {
         margin-top: 50px;
-    }
-
-    .head_post_art{
-        display: grid;
+        #posts {
+            article{
+                height: 100%;
+                padding-top: 40px;
+                padding-bottom: 56px;
+                margin: 10px 10px 60px 10px;
+                .head_post_art{
+                    display: grid;
+                    padding-left: 34.5px;
+                    .art_autor{
+                        font-size: 14px;
+                        margin-right: 8px;
+                    }
+                    .art_date {
+                        color: $grayscale2;
+                        font-size: 12px;
+                        margin-top: 6px;
+                    }
+                    .art_desc {
+                        display: block;
+                        margin-top: 6px;
+                    }
+                }
+                .body_post_art {
+                    padding-left: 37px;
+                    .art_title{
+                        color: $black1;
+                        font-size: 23px;
+                        margin: 25px 31px 20px 0px;
+                        line-height: 34px;
+                    }
+                    .art_parr{
+                        color: $black3;
+                        font-size: 14px;
+                        margin: 0px 43px 30.5px 0px;
+                        line-height: 23px;
+                    }
+                }
+                
+            }
+        }
     }
 
     #featured {
@@ -627,11 +705,27 @@ footer {
         }
         #footer_part2 {
             display: block;
+            padding-bottom: 25px;
             #part1_logo {
                 p {
                     width: auto;
                 }
             }
+            .part2_3 {
+                h3 {
+                    margin: 20px 0px 27px 0px;
+                }
+                ul {
+                    margin-top: 14px;
+                    li{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        #copyright {
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
     }
 }
@@ -655,4 +749,40 @@ footer {
             width: 100%;
         }
     }
+
+    #latest_podcast{
+        #head_section1 {
+            flex-wrap: wrap;
+            justify-content: center;
+            h2 {
+                margin-bottom: 20px;
+            }
+        } 
+    }
+
+    footer {
+        #newsletter {
+            #newsletter_form {
+                flex-wrap: wrap;
+                #email_seb {
+                    border-radius: 3px;
+                    margin-bottom: 15px;
+                }
+                #button_subs {
+                    border-radius: 3px;
+                }
+            } 
+        }
+        #footer_part2 {
+            #part1_logo {
+                #redes_sociales {
+                    display: flex;
+                    justify-content: space-evenly;
+                    a {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    } 
 }
